@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-
       initialRoute:home_screen.routeName ,
       routes: {
         home_screen.routeName:(c)=>home_screen(),
