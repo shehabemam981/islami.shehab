@@ -52,7 +52,7 @@ class _Sura_DetailsState extends State<Sura_Details> {
                       itemBuilder: (_, index) {
                         return Container(
                             margin: EdgeInsets.all(40),
-                            child: Text(verses[index]));
+                            child: Text(verses[index],style: (ThemeMode==ThemeMode.light)?Theme.of(context).textTheme.headline1:Theme.of(context).textTheme.headline1,));
                       },
                     ),
                   ),

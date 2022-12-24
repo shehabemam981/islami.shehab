@@ -34,8 +34,9 @@ class ahadethDetails extends StatelessWidget {
                 itemCount: args.content.length,
                 itemBuilder: (c,index){
                   return  Container(margin: EdgeInsets.all(40),
-                    child:Text(args.content[index]),
-                  );}
+                    child:Text(args.content[index],style: (ThemeMode==ThemeMode.light)?Theme.of(context).textTheme.headline1:Theme.of(context).textTheme.headline1,),
+                  );
+                  }
                 ,),
             ),
           ),
